@@ -23,38 +23,40 @@
         }
       ],
       "fulfillment": {
-        "start": {
-          "location": {
-            "gps": "12.910458, 77.543089",
-            "address": {
-              "ward": "Uttarahalli Hobli, Ramanjaneyanagar",
-              "country": "India",
-              "building": "6th Main Rd",
-              "state": "Karnataka 560061",
-              "city": "Bengaluru",
-              "locality": "Uttarahalli Hobli",
-              "door": "98A, Sarovarm 2nd cross",
-              "area_code": "560061",
-              "street": "Ramanjaneyanagar"
+        "stops": [
+          {
+            "location": {
+              "gps": "12.910458, 77.543089",
+              "address": {
+                "ward": "Uttarahalli Hobli, Ramanjaneyanagar",
+                "country": "India",
+                "building": "6th Main Rd",
+                "state": "Karnataka 560061",
+                "city": "Bengaluru",
+                "locality": "Uttarahalli Hobli",
+                "door": "98A, Sarovarm 2nd cross",
+                "area_code": "560061",
+                "street": "Ramanjaneyanagar"
+              }
+            }
+          },
+          {
+            "location": {
+              "gps": "12.9535139, 77.5710434",
+              "address": {
+                "ward": "Basavanagudi, Chikkanna Garden, Rangadore Memorial Hospital",
+                "country": "India",
+                "building": "Rangadore Memorial Hospital",
+                "state": "Karnataka",
+                "city": "Bengaluru",
+                "locality": "Basavanagudi",
+                "door": null,
+                "area_code": "",
+                "street": "Chikkanna Garden"
+              }
             }
           }
-        },
-        "end": {
-          "location": {
-            "gps": "12.9535139, 77.5710434",
-            "address": {
-              "ward": "Basavanagudi, Chikkanna Garden, Rangadore Memorial Hospital",
-              "country": "India",
-              "building": "Rangadore Memorial Hospital",
-              "state": "Karnataka",
-              "city": "Bengaluru",
-              "locality": "Basavanagudi",
-              "door": null,
-              "area_code": "",
-              "street": "Chikkanna Garden"
-            }
-          }
-        }
+        ]
       }
     }
   }

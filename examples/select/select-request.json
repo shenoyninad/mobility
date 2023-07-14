@@ -23,16 +23,24 @@
         }
       ],
       "fulfillment": {
-        "start": {
-          "location": {
-            "gps": "12.910458, 77.543089"
+        "stops": [
+          {
+            "location": {
+              "descriptor": {
+                "name": "start"
+              },
+              "gps": "12.910458, 77.543089"
+            }
+          },
+          {
+            "location": {
+              "descriptor": {
+                "name": "end"
+              },
+              "gps": "12.9535139, 77.5710434"
+            }
           }
-        },
-        "end": {
-          "location": {
-            "gps": "12.9535139, 77.5710434"
-          }
-        }
+        ]
       }
     }
   }

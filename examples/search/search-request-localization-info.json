@@ -14,16 +14,24 @@
   "message": {
     "intent": {
       "fulfillment": {
-        "start": {
-          "location": {
-            "gps": "12.923608703179461, 77.61462964117527"
+        "stops": [
+          {
+            "location": {
+              "descriptor": {
+                "name": "start"
+              },
+              "gps": "12.923608703179461, 77.61462964117527"
+            }
+          },
+          {
+            "location": {
+              "descriptor": {
+                "name": "end"
+              },
+              "gps": "12.9346302, 77.61533969999999"
+            }
           }
-        },
-        "end": {
-          "location": {
-            "gps": "12.9346302, 77.61533969999999"
-          }
-        },
+        ],
         "customer": {
           "person": {
             "tags":[{
