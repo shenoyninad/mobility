@@ -34,20 +34,22 @@
         ],
         "customer": {
           "person": {
-            "tags":[{
-              "descriptor": {
-                "name": "Localization"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "name": "Language"
-                  },
-                  "value": "en"
-                }
-              ],
-              "display": false
-            }]
+            "tags": [
+              {
+                "descriptor": {
+                  "name": "Localization"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "Language"
+                    },
+                    "value": "en"
+                  }
+                ],
+                "display": false
+              }
+            ]
           }
         }
       }
