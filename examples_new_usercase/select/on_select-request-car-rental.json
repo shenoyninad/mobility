@@ -1,0 +1,119 @@
+{
+    "context": {
+      "domain": "nic2008:49213",
+      "country": "IND",
+      "city": "std:011",
+      "action": "on_select",
+      "core_version": "1.1.0",
+      "bap_id": "example-bap.com",
+      "bap_uri": "https://mock_bap.com/beckn/",
+      "bpp_id": "example-bpp.com",
+      "bpp_uri": "https://api.car-rental-provider.com/beckn/",
+      "transaction_id": "6f339232-2bc3-44d2-915c-30d2b053ce1d",
+      "message_id": "fde8b8b6-c2e5-49f7-b254-720843d528bd",
+      "timestamp": "2021-03-23T10:00:40.065Z"
+    },
+    "message": {
+      "order": {
+        "id": "123413",
+        "items": [
+          {
+            "id": "1",
+            "descriptor": {
+              "name": "Economy Car"
+            },
+            "fulfillment_id": "1",
+            "price": {
+              "currency": "INR",
+              "value": "2000"
+            },
+            "tags": [
+              {
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "Vehicle Category"
+                    },
+                    "value": "Economy"
+                  },
+                  {
+                    "descriptor": {
+                      "name": "Fuel Type"
+                    },
+                    "value": "Petrol"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "provider": {
+          "id": "1",
+          "descriptor": {
+            "name": "ABC Car Rentals",
+            "images": [
+              {
+                "url": "https://car-rental-provider.com/logos/logo.ico"
+              }
+            ]
+          }
+        },
+        "fulfillment": {
+          "id": "1",
+          "stops": [
+            {
+              "location": {
+                "descriptor": {
+                  "name": "Pick-up Location"
+                },
+                "gps": "28.5811261, 77.0548206"
+              }
+            },
+            {
+              "location": {
+                "descriptor": {
+                  "name": "Drop-off Location"
+                },
+                "gps": "28.6230972, 77.2099917"
+              }
+            }
+          ],
+          "vehicle": {
+            "category": "CAR"
+          },
+          "tags": [
+            {
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "Duration"
+                  },
+                  "value": "24 hours"
+                },
+                {
+                  "descriptor": {
+                    "name": "Fuel Included"
+                  },
+                  "value": "No"
+                }
+              ]
+            }
+          ]
+        },
+        "quote": {
+            "value": "2000",
+            "currency": "INR",
+            "breakup": [
+              {
+                "title": "Base Fare",
+                "price": {
+                  "value": "2000",
+                  "currency": "INR"
+                }
+              }
+            ]
+        }
+      }
+    }
+  }
+  
