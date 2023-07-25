@@ -72,15 +72,6 @@
               }
             }
           ]
-        },
-        "payment": {
-          "id": "1",
-          "type": "ON-FULFILLMENT",
-          "params": {
-            "amount": "50",
-            "currency": "INR",
-            "transaction_status": "NOT-PAID"
-          }
         }
       }
     }
