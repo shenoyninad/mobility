@@ -1,0 +1,130 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/car-rental/beckn/on_update",
+      "domain": "nic2004:77102",
+      "timestamp": "2023-07-13T09:30:00Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "e28e4b7c-6114-4f18-9e29-7d8b38f13ef1",
+      "message_id": "a7d71e51-9876-4d7c-a2b2-31db780d6b1a",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_update",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/car-rental/v1"
+    },
+    "message": {
+      "order": {
+        "id": "7751bd26-3fdc-47ca-9b64-e998dc5abe68",
+        "provider": {
+          "id": "1",
+          "descriptor": {
+            "name": "ZoomCar Rentals"
+          }
+        },
+        "items": [
+          {
+            "id": "2",
+            "descriptor": {
+              "name": "Compact Car"
+            },
+            "start": {
+              "location": {
+                "gps": "12.9351856, 77.6245996",
+                "address": {
+                  "ward": "Koramangala, 6th Block",
+                  "country": "India",
+                  "building": "7th Main Rd",
+                  "state": "Karnataka 560095",
+                  "city": "Bengaluru",
+                  "locality": "Koramangala",
+                  "door": "145",
+                  "area_code": "560095",
+                  "street": "6th Block"
+                }
+              },
+              "time": {
+                "timestamp": "2023-07-15T10:00:00Z"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.9715987, 77.5945627",
+                "address": {
+                  "ward": "MG Road, Shivaji Nagar",
+                  "country": "India",
+                  "building": "1st Main Rd",
+                  "state": "Karnataka 560001",
+                  "city": "Bengaluru",
+                  "locality": "MG Road",
+                  "door": "78",
+                  "area_code": "560001",
+                  "street": "Shivaji Nagar"
+                }
+              },
+              "time": {
+                "timestamp": "2023-07-16T10:00:00Z"
+              }
+            },
+            "duration": {
+              "start": "2023-07-15T10:00:00Z",
+              "end": "2023-07-16T10:00:00Z"
+            }
+          }
+        ],
+        "quote": {
+          "value": "2000",
+          "currency": "INR",
+          "breakup": [
+            {
+              "title": "Rental Charges",
+              "price": {
+                "value": "2000",
+                "currency": "INR"
+              }
+            }
+          ]
+        },
+        "fulfillment": {
+          "id": "fulf_5cf064d5-4c0a-42d3-b73d-5f19a6f7468e",
+          "state": {
+            "descriptor": {
+              "code": "CAR_RENTAL_RESERVED",
+              "name": "Car Rental Reserved"
+            }
+          },
+          "agent": {
+            "name": "ZoomCar Rentals",
+            "phone": "+91-9876543210",
+            "rateable": true,
+            "rating": "4.5"
+          },
+          "customer": {
+            "person": {
+              "name": "John Doe",
+              "phone": "+91-9876543211"
+            }
+          }
+        },
+        "payment": {
+          "id": "e28e4b7c-6114-4f18-9e29-7d8b38f13ef1",
+          "type": "ON-FULFILLMENT",
+          "status": "NOT-PAID",
+          "params": {
+            "amount": "2000",
+            "currency": "INR",
+            "bank_account_name": "ZoomCar Rentals",
+            "bank_account": "32754478993",
+            "bank_code": "SBIN0000575"
+          },
+          "time": {
+            "range": {
+              "start": "2023-07-15T10:00:00Z",
+              "end": "2023-07-16T10:00:00Z"
+            }
+          }
+        }
+      }
+    }
+  }
+  

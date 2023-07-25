@@ -1,0 +1,103 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/parking/beckn/on_update",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-13T08:35:00Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "d5d9a1f1-9c0a-4be5-a4b1-2cd06f3e7aa5",
+      "message_id": "5c8f1a2b-0c47-4cd5-9ef4-43e6b2de50ad",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_update",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/parking/v1"
+    },
+    "message": {
+      "order": {
+        "id": "7751bd26-3fdc-47ca-9b64-e998dc5abe68",
+        "provider": {
+          "id": "5",
+          "descriptor": {
+            "name": "City Parking "
+          }
+        },
+        "items": [
+          {
+            "id": "5",
+            "descriptor": {
+              "name": "Covered Parking Space"
+            },
+            "location": {
+              "gps": "12.9351856, 77.6245996",
+              "address": {
+                "ward": "Indiranagar, HAL 2nd Stage",
+                "country": "India",
+                "building": "14th Main Rd",
+                "state": "Karnataka 560008",
+                "city": "Bengaluru",
+                "locality": "Indiranagar",
+                "door": "478",
+                "area_code": "560008",
+                "street": "HAL 2nd Stage"
+              }
+            },
+            "floor": "B2"
+          }
+        ],
+        "quote": {
+          "value": "50",
+          "currency": "INR",
+          "breakup": [
+            {
+              "title": "Parking Charges",
+              "price": {
+                "value": "50",
+                "currency": "INR"
+              }
+            }
+          ]
+        },
+        "fulfillment": {
+          "id": "fulf_5cf064d5-4c0a-42d3-b73d-5f19a6f7468e",
+          "state": {
+            "descriptor": {
+              "code": "PARKING_RESERVED",
+              "name": "Parking Reserved"
+            }
+          },
+          "agent": {
+            "name": "City Parking ",
+            "phone": "+91-9876543210",
+            "rateable": true,
+            "rating": "4.8"
+          },
+          "customer": {
+            "person": {
+              "name": "John Doe",
+              "phone": "+91-9876543211"
+            }
+          }
+        },
+        "payment": {
+          "id": "d5d9a1f1-9c0a-4be5-a4b1-2cd06f3e7aa5",
+          "type": "ON-FULFILLMENT",
+          "status": "NOT-PAID",
+          "params": {
+            "amount": "50",
+            "currency": "INR",
+            "bank_account_name": "City Parking ",
+            "bank_account": "32754478993",
+            "bank_code": "SBIN0000575"
+          },
+          "time": {
+            "range": {
+              "start": "2023-07-13T08:30:00Z",
+              "end": "2023-07-13T09:30:00Z"
+            }
+          }
+        }
+      }
+    }
+  }
+  
