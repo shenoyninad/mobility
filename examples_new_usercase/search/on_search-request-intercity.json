@@ -1,0 +1,161 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/intercity/beckn/search",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-13T12:05:30Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "e1f94247-76a3-48c9-8f04-7c95d4b5e1b1",
+      "message_id": "5f7a964b-2450-4e5e-b399-0d9b947c821b",
+      "city": "std:011",
+      "core_version": "1.1.0",
+      "action": "on_search",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/intercity/v1"
+    },
+    "message": {
+      "catalog": {
+        "descriptor": {
+          "name": "Inter-City Transportation Services",
+          "images": [
+            {
+              "url": "https://example-bpp.com/images/logos/intercity.ico"
+            }
+          ]
+        },
+        "providers": [
+          {
+            "provider": {
+              "id": "56789",
+              "descriptor": {
+                "name": "XYZ Intercity Transport Service"
+              }
+            },
+            "items": [
+              {
+                "id": "vehicle_1",
+                "category": "CAR",
+                "seats": 4,
+                "features": [
+                  {
+                    "name": "Air Conditioning",
+                    "description": "Comfortable AC cars for your journey."
+                  },
+                  {
+                    "name": "English-Speaking Driver",
+                    "description": "Drivers fluent in English for better communication."
+                  }
+                ],
+                "price": {
+                  "value": "25000",
+                  "currency": "INR"
+                }
+              },
+              {
+                "id": "vehicle_2",
+                "category": "SUV",
+                "seats": 6,
+                "features": [
+                  {
+                    "name": "Spacious",
+                    "description": "Roomy SUVs with ample space for luggage."
+                  }
+                ],
+                "price": {
+                  "value": "32000",
+                  "currency": "INR"
+                }
+              }  
+            ],
+            "pickup": {
+              "location": {
+                "gps": "28.6139, 77.2090",
+                "address": {
+                  "area": "Connaught Place",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "India",
+                  "zip_code": "110001"
+                }
+              },
+              "time": {
+                "timestamp": "2023-07-15T08:00:00Z"
+              }
+            },
+            "dropoff": {
+              "location": {
+                "gps": "19.0760, 72.8777",
+                "address": {
+                  "area": "Colaba",
+                  "city": "Mumbai",
+                  "state": "Maharashtra",
+                  "country": "India",
+                  "zip_code": "400005"
+                }
+              }
+            }
+          },
+          {
+            "id": "2",
+            "descriptor": {
+              "name": "Comfort Rides",
+              "images": [
+                {
+                  "url": "https://example-bpp.com/images/logos/comfortrides.ico"
+                }
+              ]
+            },
+            "items": [
+              {
+                "id": "vehicle_3",
+                "category": "SUV",
+                "seats": 6,
+                "features": [
+                  {
+                    "name": "Wi-Fi",
+                    "description": "Stay connected with complimentary Wi-Fi on-board."
+                  },
+                  {
+                    "name": "Refreshments",
+                    "description": "Enjoy complimentary refreshments during the journey."
+                  }
+                ],
+                "price": {
+                  "value": "35000",
+                  "currency": "INR"
+                }
+              }
+            ],
+            "pickup": {
+              "location": {
+                "gps": "28.6139, 77.2090",
+                "address": {
+                  "area": "Connaught Place",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "India",
+                  "zip_code": "110001"
+                }
+              },
+              "time": {
+                "timestamp": "2023-07-15T08:00:00Z"
+              }
+            },
+            "dropoff": {
+              "location": {
+                "gps": "19.0760, 72.8777",
+                "address": {
+                  "area": "Colaba",
+                  "city": "Mumbai",
+                  "state": "Maharashtra",
+                  "country": "India",
+                  "zip_code": "400005"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+  

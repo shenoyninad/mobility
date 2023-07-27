@@ -1,0 +1,67 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/intercity/beckn/select",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-13T12:30:00Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "e1f94247-76a3-48c9-8f04-7c95d4b5e1b1",
+      "message_id": "e6213d27-cb36-4212-8c03-aae967f7ed9f",
+      "city": "std:011",
+      "core_version": "1.1.0",
+      "action": "select",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/intercity/v1"
+    },
+    "message": {
+      "order": {
+        "id": "78ad0f0f-5411-4d3c-827d-94f4978e73be",
+        "provider": {
+          "id": "56789",
+          "descriptor": {
+            "name": "XYZ Intercity Transport Service"
+          }
+        },
+        "items": [
+          {
+            "id": "vehicle_1",
+            "descriptor": {
+              "name": "FastRide CAR"
+            },
+            "price": {
+              "value": "25000",
+              "currency": "INR"
+            }
+          }
+        ],
+        "pickup": {
+          "location": {
+            "gps": "28.6139, 77.2090",
+            "address": {
+              "area": "Connaught Place",
+              "city": "New Delhi",
+              "state": "Delhi",
+              "country": "India",
+              "zip_code": "110001"
+            }
+          },
+          "time": {
+            "timestamp": "2023-07-15T08:00:00Z"
+          }
+        },
+        "dropoff": {
+          "location": {
+            "gps": "19.0760, 72.8777",
+            "address": {
+              "area": "Colaba",
+              "city": "Mumbai",
+              "state": "Maharashtra",
+              "country": "India",
+              "zip_code": "400005"
+            }
+          }
+        }
+      }
+    }
+  }
+  
