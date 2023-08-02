@@ -13,7 +13,7 @@
       "bap_uri": "https://api.example-bap.com/pilot/bap/carpooling/v1"
     },
     "message": {
-      "intent": {
+      "orser": {
         "category": "TRANSPORT",
         "description": "Carpooling Request",
         "customer": {

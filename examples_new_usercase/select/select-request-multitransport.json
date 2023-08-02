@@ -1,0 +1,105 @@
+{
+    "context": {
+      "domain": "nic2004:60221",
+      "country": "IND",
+      "city": "std:011",
+      "action": "select",
+      "core_version": "1.1.0",
+      "bap_id": "https://example-bap.com",
+      "bap_uri": "https://api.example-bap.com/beckn/",
+      "bpp_id": "https://transit-solutions.com",
+      "bpp_uri": "https://api.transit-solutions.com/beckn/",
+      "transaction_id": "6f339232-2bc3-44d2-915c-30d2b053ce1d",
+      "message_id": "fde8b8b6-c2e5-49f7-b254-720843d528bd",
+      "timestamp": "2023-07-13T10:30:00Z"
+    },
+    "message": {
+      "order": {
+        "id": "a1b2c3d4e5f6",
+          "descriptor": {
+            "name": "Multi-Transport Route Selection"
+          },
+          "fulfillment": {
+            "description": "Route 2: From Location A to Location B to Location D (A -> B -> D)",
+            "locations": [
+              {
+                "descriptor": {
+                  "name": "Location A"
+                },
+                "gps": "latitude_A, longitude_A"
+              },
+              {
+                "descriptor": {
+                  "name": "Location B"
+                },
+                "gps": "latitude_B, longitude_B"
+              },
+              {
+                "descriptor": {
+                  "name": "Location D"
+                },
+                "gps": "latitude_D, longitude_D"
+              }
+            ],
+            "time": {
+              "start": "2023-07-15T08:30:00Z",
+              "end": "2023-07-15T10:30:00Z"
+            },
+            "stops": [
+              {
+                "location": {
+                  "descriptor": {
+                    "name": "Location A"
+                  },
+                  "gps": "latitude_A, longitude_A"
+                },
+                "vehicle": {
+                  "descriptor": {
+                    "name": "Bus"
+                  }
+                },
+                "cost": {
+                  "currency": "INR",
+                  "value": "20"
+                }
+              },
+              {
+                "location": {
+                  "descriptor": {
+                    "name": "Location B"
+                  },
+                  "gps": "latitude_B, longitude_B"
+                },
+                "vehicle": {
+                  "descriptor": {
+                    "name": "Metro"
+                  }
+                },
+                "cost": {
+                  "currency": "INR",
+                  "value": "15"
+                }
+              },
+              {
+                "location": {
+                  "descriptor": {
+                    "name": "Location D"
+                  },
+                  "gps": "latitude_D, longitude_D"
+                },
+                "vehicle": {
+                  "descriptor": {
+                    "name": "Metro"
+                  }
+                },
+                "cost": {
+                  "currency": "INR",
+                  "value": "35"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  
