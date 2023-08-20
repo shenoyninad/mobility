@@ -1,0 +1,141 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/beckn/ebike/on_confirm",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-03-23T04:48:53Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "b580c989-f84d-4abe-af28-2c818aafce3b",
+      "message_id": "8926b747-0362-4fcc-b795-0994a6287700",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_confirm",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/ebike/v1"
+    },
+    "message": {
+      "order": {
+        "id": "8926b747-0362-4fcc-b795-0994a6287781",
+        "provider": {
+          "id": "e8542642-0f4a-454c-9a9f-f46110c367a3",
+          "descriptor": {
+            "name": "Raghavendra J"
+          }
+        },
+        "items": [
+          {
+            "id": "ebike_123",
+            "descriptor": {
+              "name": "E-Bike Rental",
+              "code": "EBIKE"
+            },
+            "fulfillment_ids": [
+              "fulfillment_1"
+            ],
+            "payment_ids": [
+              "1"
+            ]
+          }
+        ],
+        "quote": {
+          "value": "76",
+          "currency": "INR",
+          "breakup": [
+            {
+              "title": "Base Fare",
+              "price": {
+                "value": "30",
+                "currency": "INR"
+              }
+            },
+            {
+              "title": "Per km fare",
+              "price": {
+                "value": "46",
+                "currency": "INR"
+              }
+            },
+            {
+              "title": "CGST @ 5%",
+              "price": {
+                "value": "2.5",
+                "currency": "INR"
+              }
+            },
+            {
+              "title": "SGST @ 5%",
+              "price": {
+                "value": "2.5",
+                "currency": "INR"
+              }
+            }
+          ]
+        },
+        "fulfillment": {
+          "id": "fulfillment_1",
+          "stops": [
+            {
+              "location": {
+                "gps": "12.923608703179461, 77.61462964117527",
+                "address": {
+                  "descriptor": {
+                    "name": "Start Location"
+                  }
+                }
+              }
+            },
+            {
+              "location": {
+                "gps": "12.9346302, 77.61533969999999",
+                "address": {
+                  "descriptor": {
+                    "name": "End Location"
+                  }
+                }
+              }
+            }
+          ],
+          "agent": {
+            "name": "RAGHAVENDRA J",
+            "rateable": true,
+            "rating": "5"
+          },
+          "vehicle": {
+            "category": "E_BIKE"
+          },
+          "customer": {
+            "person": {
+              "name": "John Doe",
+              "phone": "+91-9897867564",
+              "tags": [
+                {
+                  "descriptor": {
+                    "name": "Localization"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "Language"
+                      },
+                      "value": "en"
+                    }
+                  ],
+                  "display": false
+                }
+              ]
+            }
+          }
+        },
+        "payment": {
+          "id": "7f7896dd-787e-4a0b-8675-e9e6fe93bb8f",
+          "type": "ON-FULFILLMENT",
+          "params": {
+            "amount": "76",
+            "currency": "INR",
+            "transaction_status": "NOT-PAID"
+          }
+        }
+      }
+    }
+  }
+  

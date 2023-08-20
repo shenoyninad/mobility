@@ -13,7 +13,9 @@
       "bap_uri": "https://api.example-bap.com/pilot/bap/carpooling/v1"
     },
     "message": {
-      "description": "Carpooling Request Cancellation",
+      "descriptor": {
+        "short_desc": "Car pooling cancellation"
+      },
       "order": {
         "id": "7890efgh-5678-abcd-1234-567890efgh12"
       }
