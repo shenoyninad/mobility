@@ -1,0 +1,94 @@
+{
+    "context": {
+      "country": "IND",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-15T08:25:00Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "12345678-abcd-5678-efgh-9876543210ab",
+      "message_id": "d4d95809-48b7-4d0a-8b7d-6db7d3b48926",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_confirm",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/carpooling/v1"
+    },
+    "message": {
+      "description": "Carpooling Request Confirmed and Paid",
+      "order": {
+        "id": "7890efgh-5678-abcd-1234-567890efgh12",
+        "provider": {
+          "id": "abcd-1234-efgh-5678",
+          "descriptor": {
+            "name": "Carpooling Services Inc.",
+            "images": [
+              {
+                "url": "https://carpooling.com/logos/logo.png"
+              }
+            ]
+          }
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "50"
+          },
+          "breakup": [
+            {
+              "title": "Carpooling Service",
+              "price": {
+                "currency": "INR",
+                "value": "40"
+              }
+            },
+            {
+              "title": "Service Tax @ 10%",
+              "price": {
+                "currency": "INR",
+                "value": "4"
+              }
+            },
+            {
+              "title": "Convenience Fee",
+              "price": {
+                "currency": "INR",
+                "value": "6"
+              }
+            }
+          ]
+        },
+        "fulfillment": {
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Connaught Place"
+              },
+              "gps": "28.6139, 77.2090"
+            },
+            "time": {
+              "timestamp": "2023-07-15T08:00:00Z"
+            }
+          },
+          "end": {
+            "location": {
+              "descriptor": {
+                "name": "Gurugram Cyber City"
+              },
+              "gps": "28.4947, 77.0883"
+            }
+          }
+        }
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "status": "PAID",
+        "params": {
+          "amount": "50",
+          "currency": "INR"
+        },
+        "time": {
+          "duration": "P1D"
+        }
+      }
+    }
+  }
+  

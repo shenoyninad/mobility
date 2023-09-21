@@ -1,0 +1,92 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/intercity/beckn/on_search",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-13T10:30:00Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "f4352982-9c82-4b06-a7f9-8ed44c1ae6e1",
+      "message_id": "1257d42f-1208-40d2-837f-1ef3c7d4173f",
+      "city": "std:011",
+      "core_version": "1.1.0",
+      "action": "on_confirm",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/intercity/v1"
+    },
+    "message": {
+      "order": {
+        "id": "12345",
+        "provider": {
+          "id": "56789",
+          "descriptor": {
+            "name": "XYZ Intercity Transport Service"
+          }
+        },
+        "items": [
+            {
+                "id": "vehicle_1",
+                "descriptor": {
+                  "name": "FastRide CAR"
+                },
+                "price": {
+                  "value": "25000",
+                  "currency": "INR"
+                }
+              }
+        ],
+        "fulfillment": {
+          "id": "54321",
+          "start": {
+            "location": {
+              "gps": "28.6139, 77.2090",
+              "address": {
+                "area": "Connaught Place",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "India",
+                "zip_code": "110001"
+              }
+            },
+            "time": {
+              "timestamp": "2023-07-15T08:00:00Z"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "19.0760, 72.8777",
+              "address": {
+                "area": "Colaba",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "country": "India",
+                "zip_code": "400005"
+              }
+            }
+          }
+        },
+        "billing": {
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phone": "+91-9897867564"
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "25000"
+          }
+        },
+        "payment": {
+          "type": "POST-FULFILLMENT",
+          "status": "NOT-PAID",
+          "params": {
+            "amount": "25000",
+            "currency": "INR"
+          },
+          "time": {
+            "duration": "P1D"
+          }
+        }
+      }
+    }
+  }
+  

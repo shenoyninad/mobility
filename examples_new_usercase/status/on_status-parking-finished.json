@@ -1,0 +1,80 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.com/parking/beckn/on_status",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-13T11:30:00Z",
+      "bap_id": "example-bap.com",
+      "bpp_id": "example-bpp.com",
+      "transaction_id": "a34c54d2-876f-4e3a-b392-d5b6f12387c9",
+      "message_id": "c3b975ab-098e-4f2b-889d-61f016454f4a",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_status",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/parking/v1"
+    },
+    "message": {
+      "order": {
+        "id": "77751bd26-3fdc-47ca-9b64-e998dc5abe68",
+        "provider": {
+          "id": "e8542642-0f4a-454c-9a9f-f46110c367a3",
+          "descriptor": {
+            "name": "ABC Parking Lot"
+          }
+        },
+        "items": [
+          {
+            "id": "5777a0bf-9a08-49aa-a97d-1e5561a9622e",
+            "descriptor": {
+              "name": "Parking Space"
+            },
+            "fulfillment_ids": ["fulf_5cf064d5-4c0a-42d3-b73d-5f19a6f7468e"]
+          }
+        ],
+        "quote": {
+          "value": "300",
+          "currency": "INR"
+        },
+        "fulfillment": {
+          "id": "fulf_5cf064d5-4c0a-42d3-b73d-5f19a6f7468e",
+          "state": {
+            "descriptor": {
+                "code": "PARKING_SUCCESSFULLY_FINISHED",
+                "name": "You completed and exited the parking after your time"
+            }
+          },
+          "location": {
+            "gps": "12.9351856, 77.6245996",
+            "address": {
+              "ward": "Koramangala, 6th Block",
+              "country": "India",
+              "building": "7th Main Rd",
+              "state": "Karnataka 560095",
+              "city": "Bengaluru",
+              "locality": "Koramangala",
+              "door": "145",
+              "area_code": "560095",
+              "street": "6th Block"
+            }
+          },
+          "vehicle": {
+            "category": "CAR"
+          }
+        },
+        "billing": {
+          "name": "John Doe",
+          "email": "john.doe@example.com"
+        },
+        "payment": {
+          "uri": "https://pay.example.com?amt=300&cur=INR&ref=24566345563",
+          "params": {
+            "amount": "300",
+            "currency": "INR",
+            "transaction_id": "24566345563"
+          },
+          "status": "PAID"
+        }
+      }
+    }
+  }
+  

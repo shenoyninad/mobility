@@ -1,0 +1,82 @@
+{
+    "context": {
+      "country": "IND",
+      "bpp_uri": "https://api.example-bpp.in/path/to/url",
+      "domain": "nic2004:60221",
+      "timestamp": "2023-07-13T10:30:00Z",
+      "bap_id": "example-bap.in",
+      "bpp_id": "example-bpp.in",
+      "transaction_id": "a1b2c3d4e5f6",
+      "message_id": "abcdef123456",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_select",
+      "bap_uri": "https://api.example-bap.in/path/to/url"
+    },
+    "message": {
+      "order": {
+        "id": "a1b2c3d4e5f6",
+        "provider": {
+          "id": "c1d2e3f4g5h6",
+          "descriptor": {
+            "name": "City Parking"
+          }
+        },
+        "items": [
+            {
+              "id": "1",
+              "descriptor": {
+                "name": "Hourly Parking"
+              },
+              "price": {
+                "value": "50",
+                "currency": "INR"
+              },
+              "fulfillment_ids": ["1"],
+              "payment_ids": ["1"]
+            },
+            {
+              "id": "2",
+              "descriptor": {
+                "name": "Daily Parking"
+              },
+              "price": {
+                "value": "150",
+                "currency": "INR"
+              },
+              "fulfillment_ids": ["2"],
+              "payment_ids": ["1"]
+            },
+            {
+              "id": "3",
+              "descriptor": {
+                "name": "Monthly Parking"
+              },
+              "price": {
+                "value": "2000",
+                "currency": "INR"
+              },
+              "fulfillment_ids": ["3"],
+              "payment_ids": ["1"]
+            }
+          ],
+        "fulfillment": {
+          "id": "1",
+          "stops": [
+            {
+              "location": {
+                "descriptor": {
+                  "name": "Parking Lot 1"
+                },
+                "gps": "12.9099828, 77.6118226"
+              }
+            }
+          ],
+          "vehicle": {
+            "category": "PARKING_SPACE"
+          }
+        }
+      }
+    }
+  }
+  
